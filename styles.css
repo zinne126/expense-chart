@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+:root {
+  --Softred: hsl(10, 79%, 65%);
+  --cyan: hsl(186, 34%, 60%);
+  --Darkbrown: hsl(25, 47%, 15%);
+  --Mediumbrown: hsl(28, 10%, 53%);
+  --Cream: hsl(27, 66%, 92%);
+  --Verypaleorange: hsl(33, 100%, 98%);
+  --font: 18px;
+}
+body {
+  background-color: var(--Cream);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+html,
+body {
+  height: 100%;
+}
+.chart {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+  align-items: center;
+}
+.chart-header,
+.chart-body {
+  display: flex;
+  padding: 30px;
+  border-radius: 20px;
+  width: 540px;
+}
+.chart-header {
+  background-color: var(--Softred);
+  height: 128px;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.chart-body {
+  background-color: var(--Verypaleorange);
+  flex-direction: column;
+  gap: 35px;
+}
+hr {
+  border: 0.01px solid var(--Mediumbrown);
+  font-weight: lighter;
+}
+
+.total-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.month {
+  text-align: center;
+}
+.month h5 {
+  color: var(--Mediumbrown);
+}
+.total h5 {
+  color: var(--Mediumbrown);
+}
+
+.chart-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+}
+.bar {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.bar div {
+  position: relative;
+  width: 50px;
+  border-radius: 5px;
+  background-color: var(--Softred);
+  cursor: pointer;
+  transition: 0.2s all ease-in;
+}
+
+.bar div:nth-child(1) {
+  height: 10px;
+}
+.bar div:nth-child(2) {
+  height: 100px;
+}
+.label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px 0 10px;
+  color: var(--Mediumbrown);
+}
+.label p {
+  align-content: center;
+}
+
+.tool {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px !important;
+  height: auto !important;
+  background: var(--Darkbrown);
+  /* padding: 2px;*/
+  border-radius: 4px;
+  top: -40px;
+  margin-left: -5px;
+}
+
+#one {
+  display: none;
+}
+#two {
+  display: none;
+}
+#three {
+  display: none;
+}
+#four {
+  display: none;
+}
+#five {
+  display: none;
+}
+#six {
+  display: none;
+}
+#seven {
+  display: none;
+}
